@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Editor de Imágenes</title>
+  <link rel="stylesheet" href="/CSS/styles.css" />
+  <link rel="icon" type="image/png" href="/IMG/LOGO.png" />
+</head>
+<body>
+  <header>
+    <h1>Editor de Imágenes</h1>
+    <div class="nav-buttons">
+      <a href="/index.html">INICIO</a>
+      <a href="/pages/Comunidades.html">COMUNIDADES</a>
+    </div>
+  </header>
+
+  <main class="register-container">
+    <input type="file" id="upload" accept="image/*" />
+    <input type="text" id="text" placeholder="Escribe un texto para añadir" />
+    <button onclick="agregarTexto()">Agregar texto</button>
+    <canvas id="canvas" width="600" height="400" style="border: 1px solid #00bfff;"></canvas>
+    <button id="download">Descargar Imagen</button>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Editor Meme - Modo Ahorro activo</p>
+  </footer>
+
+  <script src="/scripts/creacionscript.js"></script>
+</body>
+</html>

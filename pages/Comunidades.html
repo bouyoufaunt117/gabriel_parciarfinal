@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gestión de Comunidades</title>
+  <link rel="stylesheet" href="/CSS/styles.css" />
+
+</head>
+<body>
+  <header>
+    <h1>Gestión de Comunidades</h1>
+     <div class="nav-buttons">
+      <a href="/index.html">INICIO</a>
+      <a href="/pages/Creacion.html">CREACION MEMES</a>
+    </div>
+  </header>
+
+  <main class="register-container">
+    <form id="formComunidad">
+  <h2>Crear una Comunidad</h2>
+  <input class="form-input" type="text" id="nombre" placeholder="Nombre de la comunidad" required />
+  <input class="form-input" type="file" id="logo" accept="image/*" />
+
+  <select class="form-input" id="tipoComunidad">
+    <option value="publica">Pública</option>
+    <option value="privada">Privada</option>
+  </select>
+
+  <button type="submit">Crear Comunidad</button>
+</form>
+
+
+    <div id="mensaje" class="mensaje-temporal" style="display:none;"></div>
+  </main>
+
+  <section class="register-container">
+    <h2>Buscar y Filtrar</h2>
+    <select id="filtro">
+      <option value="todas">Todas</option>
+     
+    </select>
+    <input type="text" id="buscador" placeholder="Buscar por nombre..." />
+  </section>
+
+  <section id="comunidades" class="register-container" style="display: flex; flex-wrap: wrap; gap: 16px;"></section>
+
+  <div id="paginacion" class="register-container" style="text-align: center;"></div>
+
+ 
+  <div id="modalAcceso" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); align-items:center; justify-content:center;">
+    <div style="background:#fff; padding:20px; border-radius:10px; max-width:300px;">
+      <h3>Acceso a comunidad privada</h3>
+      <input type="password" id="inputContrasena" placeholder="Contraseña" />
+      <p id="errorContrasena" style="color:red; display:none;">Contraseña incorrecta</p>
+      <button onclick="validarAcceso()">Acceder</button>
+      <button onclick="cerrarModal()">Cancelar</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Editor Meme </p>
+  </footer>
+
+  <script src="/scripts/comunidadescript.js"></script>
+</body>
+</html>

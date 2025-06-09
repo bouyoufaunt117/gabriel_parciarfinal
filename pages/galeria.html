@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Galería de Comunidad</title>
+  <link rel="stylesheet" href="../CSS/styles.css" />
+   <link rel="icon" type="image/png" href="/IMG/LOGO.png">
+</head>
+<body>
+  <header>
+    <h1 id="tituloComunidad">Galería</h1>
+  </header>
+
+  <main class="register-container">
+    <input type="file" id="subirImagen" accept="image/*" />
+    <button onclick="guardarImagen()">Subir Imagen</button>
+  </main>
+
+  <section class="register-container">
+    <h2>Imágenes compartidas</h2>
+    <div id="imagenesComunidad" class="meme-grid"></div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Editor Meme - Modo Ahorro activo</p>
+  </footer>
+
+  <script src="../scripts/galeriascript.js"></script>
+</body>
+</html>

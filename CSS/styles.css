@@ -1,0 +1,265 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(rgba(15, 15, 30, 0.9), rgba(15, 15, 30, 0.9)), 
+              url('https://wallpapercave.com/uwp/uwp4240875.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  color: #e0e0ff;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #0f0f1f;
+  padding: 1rem 2rem;
+  text-align: center;
+  color: #00bfff;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+}
+
+h1, h2, h3 {
+  color: #00bfff;
+  margin: 0.5em 0;
+  text-shadow: 1px 1px 2px #000;
+}
+
+.register-container, .video-box, .creation-container {
+  background-color: rgba(25, 25, 50, 0.85);
+  margin: 1rem auto;
+  padding: 1.5rem;
+  border-radius: 15px;
+  max-width: 600px;
+  box-shadow: 0 0 15px rgba(0, 191, 255, 0.3);
+}
+
+input, select, textarea, button {
+  display: block;
+  width: 100%;
+  margin: 0.75rem 0;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #1a1a2e;
+  color: #00ffff;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #005f73;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #00b4d8;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: 2px solid #00bfff;
+}
+
+a {
+  color: #00ffff;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+a:hover {
+  color: #90e0ef;
+}
+
+.nav-buttons {
+  margin-top: 0.5rem;
+}
+
+.centered-title {
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+@media (max-width: 600px) {
+  .register-container, .video-box {
+    padding: 1rem;
+  }
+
+  input, select, textarea, button {
+    font-size: 0.95rem;
+  }
+}
+
+
+#meme-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  align-items: start;
+}
+
+.meme-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.meme-img {
+  width: 100%;
+  max-width: 220px;
+  max-height: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 191, 255, 0.4);
+  transition: transform 0.2s ease;
+  object-fit: cover;
+  display: block;
+}
+
+#meme-container img:hover {
+  transform: scale(1.05);
+}
+
+
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+ #comunidades-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 20px;
+    }
+
+    .comunidad {
+  background-color: rgba(30, 30, 60, 0.95); 
+  color: #00bfff; 
+  border: 1px solid #1f8b4c;
+  padding: 16px;
+  border-radius: 12px;
+  width: 240px;
+  box-shadow: 0 0 10px rgba(0, 191, 255, 0.3);
+  transition: transform 0.2s;
+}
+
+.comunidad:hover {
+  transform: scale(1.03);
+}
+
+.comunidad h4 {
+  margin: 10px 0 5px;
+  font-size: 1.2rem;
+  color: #90e0ef;
+}
+
+.comunidad p {
+  margin: 4px 0;
+  font-size: 0.9rem;
+  color: #aadfff;
+}
+
+.comunidad button {
+  background-color: #006d77;
+  margin-top: 8px;
+}
+
+
+    #alerta-privada {
+      display: none;
+      position: fixed;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #fffae6;
+      border: 1px solid #ffc107;
+      color: #856404;
+      padding: 15px;
+      border-radius: 6px;
+      z-index: 999;
+    }
+
+    #alerta-privada button {
+      float: right;
+      margin-left: 10px;
+    }
+
+    form {
+      margin: 20px;
+    }
+
+    .form-input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.etiqueta-propia {
+  display: inline-block;
+  background-color: #d4edda;
+  color: #155724;
+  font-weight: bold;
+  padding: 3px 8px;
+  font-size: 12px;
+  border-radius: 5px;
+  margin-bottom: 6px;
+}
+
+#paginacion button {
+  background-color: #f2f2f2;
+  color: #333;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 12px;
+  margin: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#paginacion button:hover {
+  background-color: #d0f0d0;
+  color: #1f8b4c;
+}
+
+#paginacion button.activo {
+  background-color: #1f8b4c;
+  color: white;
+}
+
+.mensaje-temporal {
+  margin-top: 20px;
+  background-color: #fff3cd;
+  color: #856404;
+  padding: 15px;
+  border: 1px solid #ffeeba;
+  border-radius: 8px;
+  font-size: 14px;
+}
+.mensaje-temporal button {
+  float: right;
+  background: transparent;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
